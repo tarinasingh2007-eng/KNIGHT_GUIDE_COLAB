@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Planner</h1>
+        <p>Your accessible and inclusive travel companion.</p>
+    </header>
+
+    <nav>
+        <button class="hamburger-menu" id="hamburger-menu">&#9776;</button>
+        <ul id="nav-list">
+            <li><a href="#personalized-planner">Personalized Travel Planner</a></li>
+            <li><a href="#accessible-navigation">Accessible Navigation</a></li>
+            <li><a href="#safety-system">Safety System</a></li>
+            <li><a href="#communication">Communication</a></li>
+            <li><a href="#accessibility-map">Accessibility Map</a></li>
+            <li><a href="#volunteer-matching">Volunteer Matching</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="personalized-planner">
+            <h2>Personalized Travel Planner</h2>
+            <p>Plan your journey with customized itineraries tailored to your needs.</p>
+            <div class="ui-elements">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" placeholder="e.g., Paris, Tokyo">
+
+                <label for="disability-type">Disability Type:</label>
+                <select id="disability-type">
+                    <option value="">Select...</option>
+                    <option value="mobility">Mobility Impairment</option>
+                    <option value="visual">Visual Impairment</option>
+                    <option value="hearing">Hearing Impairment</option>
+                    <option value="cognitive">Cognitive Impairment</option>
+                </select>
+
+                <label for="comfort-level">Comfort Level:</label>
+                <input type="range" id="comfort-level" min="1" max="5" value="3">
+                <span>Current: <span id="comfort-level-value">3</span></span>
+
+                <button id="plan-journey">Plan Journey</button>
+            </div>
+        </section>
+
+        <section id="accessible-navigation">
+            <h2>Accessible Navigation</h2>
+            <p>Find the best routes considering accessibility features and obstacles.</p>
+            <div class="ui-elements">
+                <button id="voice-nav">Voice Navigation</button>
+                <button id="sign-lang">Sign-Language Output</button>
+                <div class="map-placeholder" id="map-area">Map Area Placeholder</div>
+            </div>
+        </section>
+
+        <section id="safety-system">
+            <h2>Safety System</h2>
+            <p>Ensure your safety with emergency contacts and real-time alerts.</p>
+            <div class="ui-elements">
+                <div class="safety-status-placeholder" id="safety-status">Safety Status: All Clear</div>
+                <button id="emergency-call">Emergency Call</button>
+                <button id="check-in">Check-in</button>
+            </div>
+        </section>
+
+        <section id="communication">
+            <h2>Communication</h2>
+            <p>Facilitate communication with locals and service providers.</p>
+            <div class="ui-elements">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Type your message here..."></textarea>
+
+                <label for="recipient">Recipient:</label>
+                <input type="text" id="recipient" placeholder="e.g., Hotel staff, Volunteer">
+
+                <button id="send-message">Send Message</button>
+            </div>
+        </section>
+
+        <section id="accessibility-map">
+            <h2>Accessibility Map</h2>
+            <p>Explore an interactive map highlighting accessible points of interest.</p>
+            <div class="ui-elements">
+                <div class="interactive-map-placeholder" id="interactive-map">Interactive Map Placeholder</div>
+            </div>
+        </section>
+
+        <section id="volunteer-matching">
+            <h2>Volunteer Matching</h2>
+            <p>Connect with volunteers for assistance during your travels.</p>
+            <div class="ui-elements">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="e.g., City, Landmark">
+
+                <label for="assistance-needed">Assistance Needed:</label>
+                <select id="assistance-needed">
+                    <option value="">Select...</option>
+                    <option value="mobility">Mobility Aid</option>
+                    <option value="guide">Guidance</option>
+                    <option value="translation">Translation</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button id="find-volunteers">Find Volunteers</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Travel Planner. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
